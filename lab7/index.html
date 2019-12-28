@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <title>Lab 7 Michciński</title>
+</head>
+<body >
+<header>
+        <div id="navbar" class="topnav">
+              <a class="active" href="index.html">Strona Główna</a>
+              <a id="blog" href="https://blog-amw.herokuapp.com/" target="_blank">Blog AMW</a>
+              <a href="/lab2COPY/lab2/index.html" target="_blank">Lab2</a>
+        </div>
+
+        <div style="padding-left:16px">
+              <h2>Laboratorium nr 7</h2>
+              <p>Witaj na stronie laboratorium nr 7.</p>
+              <p>Na tej stronie znajdziesz zadania z laboratorium nr 7 oraz będziesz mógł wrócić do niektórych poprzednich laborek z poziomu panelu nawigacji.</p>
+        </div>
+</header>
+   <section id="pkt1">
+    <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+            <img id="img00" src="img1.jpg" style="width:100%">
+        <div class="text">First picture</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+            <img src="img2.jpg" style="width:100%">
+        <div class="text">Second picture</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+            <img src="img3.jpg" style="width:100%">
+        <div class="text">Third picture</div>
+        </div>
+
+  <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            <br>
+
+<!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="pkt2">
+            <button class="accordion">Sekcja 1</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+            <button class="accordion">Sekcja 2</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+            <button class="accordion">Sekcja 3</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Strona Główna</a>
+            <a href="https://blog-amw.herokuapp.com/" target="_blank">Blog AMW</a>
+            <a href="/lab2COPY/lab2/index.html" target="_blank">Lab 2</a>
+            <a href="#pkt1">Punkt 1</a>
+            <a href="#pkt2">Punkt 2</a>
+            <a href="#pkt3">Punkt 3</a>
+            <a href="#pkt4">Punkt 4</a>
+            <a href="#pkt5">Punkt 5</a>
+            <a href="#pkt6">Punkt 6</a>
+            <a href="#pkt7">Punkt 7</a>
+            <a href="#pkt8">Punkt 8</a>
+            <a href="#pkt9">Punkt 9</a>
+            <a id="doZmiany" href="#" onclick="napisZamiana()">Punkt 10</a>
+
+        </div>
+        <div id="pkt3" style="text-align: center">
+            <h2>Boczne menu</h2>
+            <p>Naciśnij "open" aby otworzyć. Pzycisk w footerze</p>
+        </div>
+    </section>
+
+    <section id="pkt4" style="text-align: center">
+            <h1>Naciśnij obrazek aby powiększyć.</h1>
+            <img id="myImg" src="img1.jpg" alt="Lake and Mountains" style="width:100%;max-width:300px; align-content: center">
+
+<!-- The Modal -->
+        <div  id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>
+    </section>
+
+    <section id="pkt5">
+        <div class="container">
+            <img src="fireworks.jpg" alt="Fireworks" style="width:100%"  height="1000px">
+        <div class="content">
+            <h1>Happy new year!!!</h1>
+            <p>It's already 2020</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="pkt6" style="text-align: center">
+           <h1>Flip the photo</h1>
+           <p>Najedź myszką na spongeboba, a zdjęcie się obróci.</p>
+            <img id="flip" src="lab2COPY/lab2/spongebob.png" alt="Spongebob">
+    </section>
+
+    <section id="pkt7">
+        <div  id="myDIV" class="header">
+            <h2>TODO List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+            <ul id="myUL">
+            </ul>
+    </section>
+
+    <section id="pkt8">
+            <h2 style="text-align: center">Admin</h2>
+
+        <div class="card">
+            <img src="me.jpg" alt="Avatar" style="width:100%;">
+        <div class="container">
+            <h4><b>Paweł Michciński</b></h4> 
+            <p>IT Student & Future Engineer</p> 
+        </div>
+        </div>
+    </section>
+    
+    <section id="pkt9" style="text-align: center">
+            <p>Naciśnij na zdjęcie pingwina aby je pobrać<p>
+
+            <a href="https://www.pexels.com/photo/86405/download/?search_query=animal&tracking_id=my2mk41361r" download>
+            <img src="pingwin.jpg" alt="download photo" width="30%">
+            </a>
+    </section>
+
+<footer style="text-align: center">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

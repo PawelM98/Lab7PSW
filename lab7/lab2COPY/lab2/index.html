@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2 - Michciński Paweł</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+</head>
+
+
+<body>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Hello, world!</h1>
+       <button type="button" class="btn btn-primary" style="">
+     Notifications <span class="badge badge-light"></span>
+ </button>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Rozwijanie tekstu</h2>
+        <p id="czytajD">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo...</p>
+       <button  type="button" class="btn btn-primary" onclick="czytaj()">Czytaj dalej...</button>
+      </div>
+      <div class="col-md-4">
+        <h2>Zamiana zdjęć</h2>
+        <img id="patrick" src="patryk.jpg" height="200" width="200" alt="patryk">
+        <button type="button" class="btn btn-secondary" onclick="getInfo()">Gdzie zamiana?</button>
+        <p id="p01"></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <button type="button" class="btn btn-primary">View details</button>
+      </div>
+    </div>
+
+    <hr style="background: gray ; height: 1px;">
+    <!--WYSWIETLANIE CZASU PRZEZ BUTTON-->
+    <button type="button" class="btn btn-info" onclick="getDate()">
+Wyświetl datę i czas</button>
+<p id="time"></p>
+ <hr>
+ <button type="button" style="animation: active" class="btn btn-outline-secondary" onclick="myFunction()">Zmień tekst</button>
+ <p id="demo">Bez zmian.</p>
+ <hr>
+
+ Wprowadź napis do powiększenia: <input type="text" id="fname" onchange="napis()">
+ <hr>
+<h1 id="id01">Zmiana tekstu nagłówkowego h1 na p</h1>
+<p id="id02"></p>
+<button type="button" class="btn btn-outline-danger" onclick="changeh1()">Wygeneruj</button>
+<hr>
+<h3 id="H3">Sprawdznie nodeName - powinno zwrócić h3</h3>
+<p id="H302"></p>
+ <h3 id="3">Sprawdzenie działania nodeType - powinno zwrócić 3</h3>
+ <p id="302"></p>
+ <hr>
+ <div id="div1">
+<p id="p1">Pierwszy paragraf</p>
+<p id="p2">Drugi paragraf</p>
+</div>
+ <button type="button" onclick="deleteMessage()"; class=" btn btn-outline-warning">Usuń drugi paragraf</button>
+ <hr>
+ <div id="pizzaParent">
+  <p id="pizzaS">Pizza z szynką.</p>
+  <p id="pizzaSP">Pizza z szynką i pieczarkami.</p>
+  <button id="guzik" type="button" onclick="deleteMushroom()"; class="btn btn-outline-success" >Usuń pieczarki</button>
+    <button type="button" onclick="addSalami()"; class="btn btn-outline-success" >Dodaj salami</button>
+    <hr>
+<p id="parC"></p>
+<hr>
+<h2>Aby zmienić kolor wszystkich elementów p kliknij poniższy przycisk</h2>
+<button type="button" class="btn btn-outline-dark" onclick="changeP()">Zmień kolor</button>
+<hr>
+<p id="liczenie"></p>
+
+</div>
+  <hr>
+  <p>Wyświetl date dzięki EventListenerowi</p>
+    <button id="newDateButton" onclick="displayDate()" class="btn btn-primary">Data</button>
+    <p id="newDateId"></p>
+    <hr>
+    Wprowadź napis aby zamienić go z poniższym <input type="text" id="fzmiana" onchange="napisZamiana()">
+    <p id="doZmiany" style="text-decoration: underline">Napis do zmiany</p>
+ <hr>
+  <button type="button"  class="btn btn-outline-info" onclick="moveBar()">Loading...</button>
+ <div class="progress" id="myProgress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="myBar"></div>
+        </div>
+        <hr>
+        <h1>Moje umiejętności</h1>
+
+<p>HTML</p>
+<div class="progress" id="myProgressHTML" onmouseover="moveHTML()">
+<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width: 0%; background-color: gre"  id="myBarHTML" ></div>
+<!--
+<div class="kontener">
+  <div class="skills html">90%</div>
+</div>
+-->
+ </div>
+
+<p>CSS</p>
+<div class="kontener">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="kontener">
+  <div class="skills js">85%</div>
+</div>
+
+<p>PHP</p>
+<div class="kontener">
+  <div class="skills php">10%</div>
+</div>
+       
+ 
+  </div> <!-- /container -->
+
+</main>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:300px;height:auto;padding:40px;margin: auto;text-align: center">
+Najedź myszką </div>
+
+
+<footer style="background-color:burlywood; height: 100px">
+  <p style="text-align:center; padding: 40px; margin-bottom: 0px">&copy; Company 2017-2019</p>
+</footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
